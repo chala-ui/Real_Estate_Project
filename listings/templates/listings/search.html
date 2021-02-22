@@ -1,4 +1,4 @@
-{% extends 'pages/base.html' %}
+{% extends 'base.html' %}
 
 {% load humanize %}
 
@@ -77,13 +77,13 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="index.html">
+            <a href="{% url 'index' %}">
               <i class="fas fa-home"></i> Home</a>
           </li>
           <li class="breadcrumb-item">
-            <a href="listings.html">Browse Listings</a>
+            <a href="{% url 'listings' %}">Browse Listings</a>
           </li>
-          <li class="breadcrumb-item active"> Search Results</li>
+          <li class="breadcrumb-item active">Search Results</li>
         </ol>
       </nav>
     </div>
